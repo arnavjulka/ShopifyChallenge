@@ -3,10 +3,7 @@ package com.example.shopifychallenge.models;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Data
@@ -19,8 +16,8 @@ import java.io.Serializable;
 public class InventoryGroup implements Serializable {
 
   @Id
-  @Column(name = "groupId")
-  String groupId;
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  Long groupId;
 
   @Column(name = "groupName")
   String groupName;
@@ -28,6 +25,5 @@ public class InventoryGroup implements Serializable {
   @Column(name = "department")
   String department;
 
-  //TODO add other fields as req.
 
 }

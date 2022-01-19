@@ -27,4 +27,12 @@ public interface InventoryService {
 
   // Delete operation
   void deleteItemById(Long productId);
+
+  // add inventory item to group
+  InventoryItem addInventoryItemToGroup(Long productId, Long groupId) throws Exception;
+
+  // remove inventory item from group
+  InventoryItem removeInventoryItemfromGroup(Long productId) throws Exception;
+
+  List<InventoryItem> fetchGroupItems(Long groupId) throws Exception;
 }

@@ -65,4 +65,22 @@ public class InventoryController {
     return "Deleted Successfully";
   }
 
+  @PutMapping("/item/{tid}/group/{groupid}")
+  public String removeItemById(@PathVariable("tid")  Long itemId, @PathVariable("groupid")  Long groupId) throws Exception {
+    inventoryService.addInventoryItemToGroup(itemId,groupId);
+    return "added Successfully";
+  }
+
+  @PutMapping("/groupitem/remove/{id}")
+  public String removeItemGroup(@PathVariable("id")  Long itemId) throws Exception {
+    inventoryService.removeInventoryItemfromGroup(itemId);
+    return "Deleted Successfully";
+  }
+
+  @GetMapping("/items/groupItems/{groupid}")
+  public List<InventoryItem> fetchActiveItemList(@PathVariable("groupid")  Long groupId) throws Exception {
+    return inventoryService.fetchGroupItems(groupId);
+  }
+
+
 }

@@ -46,6 +46,7 @@ public class InventoryItem implements Serializable {
 
   @ManyToOne(cascade = CascadeType.ALL)
   @JoinColumn(name = "inventory_group_id", referencedColumnName = "groupId")
+  @JsonIgnore
   private InventoryGroup inventoryGroup;
 
 }
