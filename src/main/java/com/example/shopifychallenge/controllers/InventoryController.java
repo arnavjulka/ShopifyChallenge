@@ -22,10 +22,22 @@ public class InventoryController {
   }
 
   // Read operation
-  @GetMapping("/item")
+  @GetMapping("/items")
   public List<InventoryItem> fetchItemList()
   {
     return inventoryService.fetchItemList();
+  }
+
+  @GetMapping("/items/active")
+  public List<InventoryItem> fetchActiveItemList()
+  {
+    return inventoryService.fetchActiveItemList();
+  }
+
+  @GetMapping("/items/removed")
+  public List<InventoryItem> fetchDeletedItemList()
+  {
+    return inventoryService.fetchDeletedItemList();
   }
 
   // Update operation
@@ -39,11 +51,17 @@ public class InventoryController {
 
   // Delete operation
   @DeleteMapping("/item/{id}")
-  public String deleteItemById(@PathVariable("id")
-                                         Long itemId)
+  public String deleteItemById(@PathVariable("id")  Long itemId)
   {
     inventoryService.deleteItemById(
         itemId);
+    return "Deleted Successfully";
+  }
+
+  // Delete operation
+  @PutMapping("/item/remove/{id}")
+  public String removeItemById(@PathVariable("id")  Long itemId) throws Exception {
+    inventoryService.removeById(itemId);
     return "Deleted Successfully";
   }
 

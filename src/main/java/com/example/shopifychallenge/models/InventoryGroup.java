@@ -25,6 +25,9 @@ public class InventoryGroup implements Serializable {
   @Column(name = "groupName")
   String groupName;
 
+  @Column(name = "department")
+  String department;
+
   //TODO add other fields as req.
 
 }
