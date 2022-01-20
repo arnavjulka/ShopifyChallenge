@@ -3,6 +3,7 @@ package com.example.shopifychallenge.controllers;
 import com.example.shopifychallenge.models.InventoryGroup;
 import com.example.shopifychallenge.models.InventoryItem;
 import com.example.shopifychallenge.services.InventoryGroupService;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +17,7 @@ public class InventoryGroupController {
 
   // Save operation
   @PostMapping("/group")
+  @ApiOperation(value = "create a new group")
   public InventoryGroup saveItem(
       @RequestBody InventoryGroup group)
   {
@@ -24,6 +26,7 @@ public class InventoryGroupController {
 
   // Read operation
   @GetMapping("/itemgroups")
+  @ApiOperation(value = "get all the groups")
   public List<InventoryGroup> fetchItemList()
   {
     return inventoryGroupService.fetchGroupList();

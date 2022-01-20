@@ -1,0 +1,15 @@
+com\example\shopifychallenge\services\impl\InventoryServiceImpl.class
+com\example\shopifychallenge\controllers\InventoryGroupController.class
+com\example\shopifychallenge\ServletInitializer.class
+com\example\shopifychallenge\config\SwaggerConfig.class
+com\example\shopifychallenge\models\InventoryGroup.class
+com\example\shopifychallenge\services\InventoryService.class
+com\example\shopifychallenge\controllers\InventoryController.class
+com\example\shopifychallenge\dao\InventoryRepository.class
+com\example\shopifychallenge\dao\InventoryGroupRepository.class
+com\example\shopifychallenge\models\InventoryGroup$InventoryGroupBuilder.class
+com\example\shopifychallenge\models\InventoryItem$InventoryItemBuilder.class
+com\example\shopifychallenge\services\InventoryGroupService.class
+com\example\shopifychallenge\ShopifyChallengeApplication.class
+com\example\shopifychallenge\services\impl\InventoryGroupServiceImpl.class
+com\example\shopifychallenge\models\InventoryItem.class
