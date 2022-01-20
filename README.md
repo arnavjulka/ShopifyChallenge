@@ -42,7 +42,7 @@ Once the setup is complete then access the database by following these steps -
 #### accessing the APIs
 * once the server is up go to ``` http://localhost:8080/swagger-ui ```
 * you will see all the apis and their responses 
-![image](https://user-images.githubusercontent.com/25602564/150241810-a6595c63-9047-402d-90bb-0b947352546a.png)
+![image](https://user-images.githubusercontent.com/25602564/150243500-cfe94923-1ea0-4f3e-8a83-28e23a40bb77.png)
 * click on -  inventory-controller
 * click on post call to save items 
 ![image](https://user-images.githubusercontent.com/25602564/150241927-d504d6bb-7498-4000-a0e7-215bdcad67de.png)
