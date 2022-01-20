@@ -1,5 +1,8 @@
 # ShopifyChallenge
 
+Hello to my backend challenge 
+I completed the basic CRUD function and the task -"Ability to assign/remove inventory items to a named group/collection" from the list of tasks
+
 ### Set up requirements -
 installl these (exact version are not important) -
 * java - java 11.0.12 2021-07-20 LTS (any java above java8 will do)
