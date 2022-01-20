@@ -15,7 +15,7 @@ just run the maven configuration, build the project, run the project via ide onl
 #### deploy the war file in your tomcat
 * go to the main directory(outside src, the folder where pom.xml is present)
 * open git bash/cmd/anybash/terminal
-* run this command ``` mvn clean 
-* run this command ``` mvn install 
+* run this command ``` mvn clean ```
+* run this command ``` mvn install ```
 * or follow this link https://www.appsdeveloperblog.com/create-a-deployable-war-file-with-spring-boot/ 
 
