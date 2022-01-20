@@ -26,7 +26,7 @@ just run the maven configuration, build the project, run the project via ide onl
 * run the tomcat server( by running the startup file in tomcat/bin folder)
 * follow this guide in case- https://www.baeldung.com/tomcat-deploy-war
 
-### After setup is complete - Consume APIs
+### After setup is complete - Consume APIs and configure DB
 Once the setup is complete then access the database by following these steps - 
 * go to ``` http://localhost:8080/h2-console ```
 * enter the following values for the following fields 
@@ -35,9 +35,23 @@ Once the setup is complete then access the database by following these steps -
 * Username : ``` sa ```
 * Password : ``` ```
 * click on connect. The prompt before connecting should look like this 
-* ![image](https://user-images.githubusercontent.com/25602564/150241434-010c19aa-0250-419e-a3fe-ba4c616716c5.png)
+![image](https://user-images.githubusercontent.com/25602564/150241434-010c19aa-0250-419e-a3fe-ba4c616716c5.png)
 * after logging in the console should look like this 
-* ![image](https://user-images.githubusercontent.com/25602564/150241571-d488b2c7-8cd5-44d0-95c0-9684a915399a.png)
+![image](https://user-images.githubusercontent.com/25602564/150241571-d488b2c7-8cd5-44d0-95c0-9684a915399a.png)
+
+#### accessing the APIs
+* once the server is up go to ``` http://localhost:8080/swagger-ui ```
+* you will see all the apis and their responses 
+![image](https://user-images.githubusercontent.com/25602564/150241810-a6595c63-9047-402d-90bb-0b947352546a.png)
+* click on -  inventory-controller
+* click on post call to save items 
+![image](https://user-images.githubusercontent.com/25602564/150241927-d504d6bb-7498-4000-a0e7-215bdcad67de.png)
+* click on try it out -> edit dummy JSON data -> click on execute -> 
+* it will execute and hit the particular API with the JSON value as inserted as in input and return the result below
+* You can check the result in the DB also 
+* You can play along the APIs in the swagger UI dashboard itself 
+* Each API has its definition with it, its input value and its return value
+
 
 
 
