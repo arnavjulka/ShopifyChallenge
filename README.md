@@ -45,7 +45,7 @@ Once the setup is complete then access the database by following these steps -
 ![image](https://user-images.githubusercontent.com/25602564/150243500-cfe94923-1ea0-4f3e-8a83-28e23a40bb77.png)
 * click on -  inventory-controller
 * click on post call to save items 
-![image](https://user-images.githubusercontent.com/25602564/150241927-d504d6bb-7498-4000-a0e7-215bdcad67de.png)
+![image](https://user-images.githubusercontent.com/25602564/150243577-11940176-f501-46f5-a28c-66974acf646a.png)
 * click on try it out -> edit dummy JSON data -> click on execute -> 
 * it will execute and hit the particular API with the JSON value as inserted as in input and return the result below
 * You can check the result in the DB also 
